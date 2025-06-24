@@ -55,6 +55,11 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 .c-space {
   @apply sm:px-10 px-5 lg:px-15;
 }
@@ -91,6 +96,7 @@ body {
 .nav-link {
   @apply text-lg md:text-base hover:text-white transition-colors;
 }
+
 /* Button Components */
 .btn {
   @apply relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden;
@@ -135,4 +141,108 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+/* Blog Section Styles */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Horizontal Scrolling Blog Container */
+.blog-scroll-container {
+  @apply relative w-full;
+}
+
+.blog-scroll-wrapper {
+  @apply flex gap-6 overflow-x-auto pb-4;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #33c2cc #1f1e39;
+}
+
+.blog-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.blog-scroll-wrapper::-webkit-scrollbar-track {
+  @apply bg-indigo rounded-full;
+}
+
+.blog-scroll-wrapper::-webkit-scrollbar-thumb {
+  @apply bg-aqua rounded-full;
+}
+
+.blog-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  @apply bg-mint;
+}
+
+.blog-card-wrapper {
+  @apply flex-shrink-0;
+  width: 350px;
+  min-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .blog-card-wrapper {
+    width: 280px;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-card-wrapper {
+    width: 260px;
+    min-width: 260px;
+  }
+}
+
+/* Blog Post Content Styling */
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-4 text-aqua;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold mt-6 mb-3 text-mint;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 space-y-2;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 space-y-2;
+}
+
+.prose li {
+  @apply text-neutral-300;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-aqua pl-4 italic text-neutral-400 my-4;
+}
+
+.prose code {
+  @apply bg-white/10 px-2 py-1 rounded text-sm font-mono text-aqua;
+}
+
+.prose pre {
+  @apply bg-white/5 p-4 rounded-lg overflow-x-auto my-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-neutral-300;
 }

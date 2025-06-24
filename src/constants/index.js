@@ -226,53 +226,69 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/918619999198?text=Hi%20there!%20I%20want%20to%20connect%20with%20you",
     icon: "/assets/socials/whatsApp.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/aditya-tiwari-b17871248/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/adityatiwari4533/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "TechBee Scholar (IT Fundamentals Trainee)",
+    job: "HCL Technologies",
+    date: "2022 - 2023",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Completed rigorous technical training under HCL's TechBee Program, covering core IT disciplines.",
+      "✅ Gained hands-on experience with Windows Server, Active Directory, Oracle DB, and SQL Server.",
+      "✅ Mastered foundational skills in Red Hat Linux, Cisco Networking, and ITIL processes.",
+      "Built strong problem-solving mindset and discipline for structured enterprise-grade IT systems.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "AI Automation Engineer",
+    job: "HCL Technologies",
+    date: "2023 – Present",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Engineered enterprise-grade automation solutions using Microsoft Power Platform and agentic AI principles.",
+      "Designed scalable internal apps and automation flows reducing manual effort by 50% across teams.",
+      "✅ Built the 'Queue Finder App' using low-code logic and keyword intelligence to predict correct ticket queues — simulating NLP-based routing.",
+      "✅ Used data structures like hash maps and string matching algorithms to optimize keyword classification in support automation tools.",
+      "✅ Integrated Power BI dashboards and Teams bots to provide live analytics and notification systems.",
+      "Advocated for agentic AI use cases inside internal systems — enabling tools to take autonomous actions like self-refreshing reports, triggering follow-ups, and prioritizing incidents based on historic patterns.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "Founder & Agentic AI Developer",
+    job: "AND (Automation & Development Studio)",
+    date: "2024 – Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Launched a futuristic AI-powered platform aimed at democratizing automation through intuitive no-code interfaces.",
+      "Designed software modules capable of converting natural language prompts into full-scale workflows and AI bots.",
+      "✅ Developed a web-based automation assistant that can connect to APIs like OpenAI, Gemini, and Power Automate to build custom routines.",
+      "✅ Integrated software design patterns to enable 3D UI effects, dynamic routing, and modular plugin systems on the AND website.",
+      "Worked on agentic loop logic — enabling users to auto-schedule repetitive tasks like email follow-ups, form processing, and report generation.",
+      "Built a DSA-driven task prioritizer that uses queue simulation and graph traversal to manage complex automation flows.",
+    ],
+  },
+  {
+    title: "Applied AI & Data Intern",
+    job: "Indian Institute of Technology, Guwahati",
+    date: "Dec 2024 – Present",
+    contents: [
+      "Worked on academic data analytics pipelines to support research publication insights and automation models.",
+      "✅ Developed Python scripts using pandas and NumPy to parse large datasets and generate visual reports.",
+      "✅ Used decision trees and basic ML techniques to build prediction models for research impact scores.",
+      "Integrated agentic prompts into academic workflows, allowing researchers to receive auto-summarized stats and recommendations via email.",
+      "Explored optimization problems and implemented graph-based techniques in research matching algorithms.",
     ],
   },
 ];
@@ -324,5 +340,104 @@ export const reviews = [
     username: "@eve",
     body: "So glad I found this. It has changed the game for me.",
     img: "https://robohash.org/eve",
+  },
+];
+
+export const myBlogs = [
+  {
+    id: 1,
+    title: "The Future of AI Automation: From Manual to Autonomous",
+    excerpt:
+      "Exploring how AI automation is transforming businesses and the role of agentic AI in creating self-managing systems.",
+    content: `
+      <h2>Introduction</h2>
+      <p>Artificial Intelligence has evolved from simple rule-based systems to sophisticated automation platforms that can think, learn, and act autonomously. In this post, we'll explore the transformative power of AI automation and how it's reshaping industries.</p>
+      
+      <h2>The Evolution of Automation</h2>
+      <p>Traditional automation was limited to predefined rules and workflows. Today's AI automation systems can adapt, learn from patterns, and make decisions without human intervention. This shift from reactive to proactive automation is what we call "agentic AI."</p>
+      
+      <h2>Real-World Applications</h2>
+      <p>From my experience at HCL Technologies, I've seen how AI automation can reduce manual effort by up to 50%. The Queue Finder App I developed demonstrates how intelligent keyword matching and predictive routing can revolutionize support systems.</p>
+      
+      <h2>The Future Landscape</h2>
+      <p>As we move forward, AI systems will become more autonomous, capable of self-optimization and continuous improvement. The key is building systems that can understand context, learn from outcomes, and adapt their behavior accordingly.</p>
+    `,
+    date: "2024-01-15",
+    readTime: "5 min read",
+    tags: ["AI", "Automation", "Technology"],
+    image: "/assets/projects/auth-system.jpg",
+    slug: "future-of-ai-automation",
+  },
+  {
+    id: 2,
+    title: "Building Scalable Web Applications with .NET Core",
+    excerpt:
+      "A comprehensive guide to architecting robust web applications using .NET Core, Entity Framework, and modern development practices.",
+    content: `
+      <h2>Why .NET Core?</h2>
+      <p>.NET Core represents a significant evolution in Microsoft's development platform, offering cross-platform compatibility, improved performance, and a more modular architecture. Let's dive into why it's becoming the go-to choice for modern web development.</p>
+      
+      <h2>Key Architecture Principles</h2>
+      <p>When building scalable applications, following solid architectural principles is crucial. The Clean Architecture pattern, combined with SOLID principles, provides a robust foundation for maintainable code.</p>
+      
+      <h2>Entity Framework Core Best Practices</h2>
+      <p>EF Core offers powerful ORM capabilities, but with great power comes great responsibility. Proper query optimization, lazy loading strategies, and migration management are essential for performance.</p>
+      
+      <h2>Performance Optimization</h2>
+      <p>From database query optimization to caching strategies, there are numerous ways to ensure your .NET Core application performs at scale. I'll share techniques I've used in production environments.</p>
+    `,
+    date: "2024-01-10",
+    readTime: "8 min read",
+    tags: [".NET", "C#", "Web Development"],
+    image: "/assets/projects/blazor-app.jpg",
+    slug: "scalable-web-applications-dotnet-core",
+  },
+  {
+    id: 3,
+    title: "Modern Frontend Development with React and Tailwind CSS",
+    excerpt:
+      "Discover how to create stunning, responsive user interfaces using React's component-based architecture and Tailwind's utility-first CSS framework.",
+    content: `
+      <h2>The Power of Component-Based Architecture</h2>
+      <p>React's component-based approach revolutionizes how we think about UI development. By breaking down complex interfaces into reusable components, we achieve better maintainability and code reuse.</p>
+      
+      <h2>Tailwind CSS: Utility-First Approach</h2>
+      <p>Tailwind CSS challenges traditional CSS methodologies by providing utility classes that promote consistency and rapid development. This approach eliminates the need for custom CSS in most cases.</p>
+      
+      <h2>Performance Considerations</h2>
+      <p>Modern React applications need to be fast and responsive. Techniques like code splitting, lazy loading, and proper state management are crucial for optimal performance.</p>
+      
+      <h2>Best Practices for Production</h2>
+      <p>From proper error boundaries to accessibility considerations, there are many factors to consider when building production-ready React applications. I'll share lessons learned from real-world projects.</p>
+    `,
+    date: "2024-01-05",
+    readTime: "6 min read",
+    tags: ["React", "Frontend", "CSS"],
+    image: "/assets/projects/elearning.jpg",
+    slug: "modern-frontend-react-tailwind",
+  },
+  {
+    id: 4,
+    title: "Implementing Authentication and Authorization in Modern Web Apps",
+    excerpt:
+      "A deep dive into secure authentication patterns, OAuth integration, and role-based access control for contemporary web applications.",
+    content: `
+      <h2>The Security Landscape</h2>
+      <p>Security is paramount in modern web development. Understanding the difference between authentication (who you are) and authorization (what you can do) is fundamental to building secure applications.</p>
+      
+      <h2>OAuth and OpenID Connect</h2>
+      <p>OAuth 2.0 and OpenID Connect provide standardized ways to handle authentication and authorization. These protocols enable secure, scalable identity management across distributed systems.</p>
+      
+      <h2>Implementing Role-Based Access Control</h2>
+      <p>RBAC systems allow fine-grained control over user permissions. I'll walk through implementing RBAC in both frontend and backend applications, including practical examples with Auth0.</p>
+      
+      <h2>Security Best Practices</h2>
+      <p>From JWT token management to preventing common vulnerabilities like XSS and CSRF, security requires a multi-layered approach. Learn the essential practices for production applications.</p>
+    `,
+    date: "2023-12-28",
+    readTime: "7 min read",
+    tags: ["Security", "Authentication", "OAuth"],
+    image: "/assets/projects/accessories.jpg",
+    slug: "authentication-authorization-web-apps",
   },
 ];
