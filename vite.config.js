@@ -5,37 +5,35 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
+    // Remove manual chunks to avoid circular dependency issues
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Separate vendor chunks for better caching
-          "react-vendor": ["react", "react-dom"],
-          "three-vendor": ["three", "@react-three/fiber", "@react-three/drei"],
-          "animation-vendor": ["motion", "maath"],
-          "ui-vendor": ["tailwind-merge", "react-responsive"],
-        },
+        // Let Vite handle chunking automatically
+        manualChunks: undefined,
       },
     },
     // Increase chunk size warning limit since 3D libraries are naturally large
-    chunkSizeWarningLimit: 1000,
-    // Enable source maps for production debugging (optional)
-    sourcemap: false,
+    chunkSizeWarningLimit: 1500,
+    // Enable source maps for debugging
+    sourcemap: true,
     // Optimize for modern browsers
-    target: "es2015",
+    target: "es2020",
   },
   // Optimize deps
   optimizeDeps: {
     include: [
       "react",
       "react-dom",
-      "motion",
+      "motion/react",
       "three",
       "@react-three/fiber",
       "@react-three/drei",
+      "maath",
+      "tailwind-merge",
     ],
   },
-  // Performance optimizations
+  // Ensure proper ES module handling
   esbuild: {
-    drop: ["console", "debugger"],
+    target: "es2020",
   },
 });
