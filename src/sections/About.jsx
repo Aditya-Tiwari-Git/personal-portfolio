@@ -50,16 +50,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-<<<<<<< HEAD
               text="DSA"
-=======
-              text="Agentic AI"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Development"
->>>>>>> 4730a8e0c241190b5f05c3bfe49c1037333e1093
               containerRef={grid2Container}
             />
             <Card
@@ -106,11 +97,7 @@ const About = () => {
             <p className="headText">Teck Stack</p>
             <p className="subtext">
               I specialize in a variety of languages, frameworks, and tools that
-<<<<<<< HEAD
               allow me to build robust and scalable applications
-=======
-              allow me to build robust and scalable Solutions.
->>>>>>> 4730a8e0c241190b5f05c3bfe49c1037333e1093
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
