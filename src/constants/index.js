@@ -342,3 +342,102 @@ export const reviews = [
     img: "https://robohash.org/eve",
   },
 ];
+
+export const myBlogs = [
+  {
+    id: 1,
+    title: "The Future of AI Automation: From Manual to Autonomous",
+    excerpt:
+      "Exploring how AI automation is transforming businesses and the role of agentic AI in creating self-managing systems.",
+    content: `
+      <h2>Introduction</h2>
+      <p>Artificial Intelligence has evolved from simple rule-based systems to sophisticated automation platforms that can think, learn, and act autonomously. In this post, we'll explore the transformative power of AI automation and how it's reshaping industries.</p>
+      
+      <h2>The Evolution of Automation</h2>
+      <p>Traditional automation was limited to predefined rules and workflows. Today's AI automation systems can adapt, learn from patterns, and make decisions without human intervention. This shift from reactive to proactive automation is what we call "agentic AI."</p>
+      
+      <h2>Real-World Applications</h2>
+      <p>From my experience at HCL Technologies, I've seen how AI automation can reduce manual effort by up to 50%. The Queue Finder App I developed demonstrates how intelligent keyword matching and predictive routing can revolutionize support systems.</p>
+      
+      <h2>The Future Landscape</h2>
+      <p>As we move forward, AI systems will become more autonomous, capable of self-optimization and continuous improvement. The key is building systems that can understand context, learn from outcomes, and adapt their behavior accordingly.</p>
+    `,
+    date: "2024-01-15",
+    readTime: "5 min read",
+    tags: ["AI", "Automation", "Technology"],
+    image: "/assets/projects/auth-system.jpg",
+    slug: "future-of-ai-automation",
+  },
+  {
+    id: 2,
+    title: "Building Scalable Web Applications with .NET Core",
+    excerpt:
+      "A comprehensive guide to architecting robust web applications using .NET Core, Entity Framework, and modern development practices.",
+    content: `
+      <h2>Why .NET Core?</h2>
+      <p>.NET Core represents a significant evolution in Microsoft's development platform, offering cross-platform compatibility, improved performance, and a more modular architecture. Let's dive into why it's becoming the go-to choice for modern web development.</p>
+      
+      <h2>Key Architecture Principles</h2>
+      <p>When building scalable applications, following solid architectural principles is crucial. The Clean Architecture pattern, combined with SOLID principles, provides a robust foundation for maintainable code.</p>
+      
+      <h2>Entity Framework Core Best Practices</h2>
+      <p>EF Core offers powerful ORM capabilities, but with great power comes great responsibility. Proper query optimization, lazy loading strategies, and migration management are essential for performance.</p>
+      
+      <h2>Performance Optimization</h2>
+      <p>From database query optimization to caching strategies, there are numerous ways to ensure your .NET Core application performs at scale. I'll share techniques I've used in production environments.</p>
+    `,
+    date: "2024-01-10",
+    readTime: "8 min read",
+    tags: [".NET", "C#", "Web Development"],
+    image: "/assets/projects/blazor-app.jpg",
+    slug: "scalable-web-applications-dotnet-core",
+  },
+  {
+    id: 3,
+    title: "Modern Frontend Development with React and Tailwind CSS",
+    excerpt:
+      "Discover how to create stunning, responsive user interfaces using React's component-based architecture and Tailwind's utility-first CSS framework.",
+    content: `
+      <h2>The Power of Component-Based Architecture</h2>
+      <p>React's component-based approach revolutionizes how we think about UI development. By breaking down complex interfaces into reusable components, we achieve better maintainability and code reuse.</p>
+      
+      <h2>Tailwind CSS: Utility-First Approach</h2>
+      <p>Tailwind CSS challenges traditional CSS methodologies by providing utility classes that promote consistency and rapid development. This approach eliminates the need for custom CSS in most cases.</p>
+      
+      <h2>Performance Considerations</h2>
+      <p>Modern React applications need to be fast and responsive. Techniques like code splitting, lazy loading, and proper state management are crucial for optimal performance.</p>
+      
+      <h2>Best Practices for Production</h2>
+      <p>From proper error boundaries to accessibility considerations, there are many factors to consider when building production-ready React applications. I'll share lessons learned from real-world projects.</p>
+    `,
+    date: "2024-01-05",
+    readTime: "6 min read",
+    tags: ["React", "Frontend", "CSS"],
+    image: "/assets/projects/elearning.jpg",
+    slug: "modern-frontend-react-tailwind",
+  },
+  {
+    id: 4,
+    title: "Implementing Authentication and Authorization in Modern Web Apps",
+    excerpt:
+      "A deep dive into secure authentication patterns, OAuth integration, and role-based access control for contemporary web applications.",
+    content: `
+      <h2>The Security Landscape</h2>
+      <p>Security is paramount in modern web development. Understanding the difference between authentication (who you are) and authorization (what you can do) is fundamental to building secure applications.</p>
+      
+      <h2>OAuth and OpenID Connect</h2>
+      <p>OAuth 2.0 and OpenID Connect provide standardized ways to handle authentication and authorization. These protocols enable secure, scalable identity management across distributed systems.</p>
+      
+      <h2>Implementing Role-Based Access Control</h2>
+      <p>RBAC systems allow fine-grained control over user permissions. I'll walk through implementing RBAC in both frontend and backend applications, including practical examples with Auth0.</p>
+      
+      <h2>Security Best Practices</h2>
+      <p>From JWT token management to preventing common vulnerabilities like XSS and CSRF, security requires a multi-layered approach. Learn the essential practices for production applications.</p>
+    `,
+    date: "2023-12-28",
+    readTime: "7 min read",
+    tags: ["Security", "Authentication", "OAuth"],
+    image: "/assets/projects/accessories.jpg",
+    slug: "authentication-authorization-web-apps",
+  },
+];
